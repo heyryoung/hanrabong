@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:include page="../common/head.jsp"/>
+	<div><h3>마이페이지</h3></div>
+	<div class = "mypage_spac">
+		<div>사원번호</div> <div id = "mypage_text"> ${emp.get(0)}</div>
+		<div>영문명</div> <div id = "mypage_text"> ${emp.get(1)}</div>
+		<div>직업</div> <div id = "mypage_text"> ${emp.get(2)}</div>
+		<div>직책</div> <div id = "mypage_text"> ${emp.get(3)}</div>
+		<div>입사날짜</div> <div id = "mypage_text"> ${emp.get(4)}</div>
+		<div>연봉</div> <div id = "mypage_text"> ${emp.get(5)}</div>
+		<div>COMM</div> <div id = "mypage_text"> ${emp.get(6)}</div>
+		<div>부서번호</div> <div id = "mypage_text"> ${emp.get(7)}</div>
+
+		<div> <a id ="mypage_back"href="#">뒤로가기</a></div>
+	
+	<c:forEach items="${searchResult}" var="dto">
+	${dto.playerName}입니다.  <br>
+	</c:forEach>
+	
+	
+	</div>
+
+<jsp:include page="../common/foot.jsp"/>

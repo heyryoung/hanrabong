@@ -1,0 +1,9 @@
+package com.hanrabong.web.domains;
+
+import java.io.Serializable;
+
+public class EmpBean implements Serializable{
+	private static final long serialVersionUID= 1L;
+
+	private String EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO;''
+}

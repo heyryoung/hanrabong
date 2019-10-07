@@ -1,0 +1,67 @@
+package com.hanrabong.web.daoImpls;
+
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import com.hanrabong.web.daos.EmpDao;
+import com.hanrabong.web.domains.DeptBean;
+import com.hanrabong.web.domains.EmpBean;
+import com.soccer.web.factory.DatabaseFactory;
+import com.soccer.web.pool.Constants;
+
+public class EmpDaoImpl implements EmpDao{
+	
+	private static EmpDaoImpl instance = new EmpDaoImpl();
+	private  EmpDaoImpl() {}
+	public static EmpDaoImpl getInstance() {return instance;}
+	
+
+	@Override
+	public EmpBean login(EmpBean eb) {
+		
+		
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public Boolean insetEmp(EmpBean eb) {
+		Boolean rs =false;
+		String sql = "INSERT INTO PLAYER (PLAYER_ID, PLAYER_NAME, TEAM_ID, E_PLAYER_NAME, NICKNAME, JOIN_YYYY, POSITION, BACK_NO, NATION, BIRTH_DATE, SOLAR, HEIGHT,WEIGHT)\r\n" + 
+				"VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		try {
+			PreparedStatement pstmt = DatabaseFactory
+					.createDatabase(Constants.VENDOR)
+					.getConnection()
+					.prepareStatement(sql);
+			pstmt.setString(1, eb.getPlayerId());
+			rs = pstmt.executeUpdate();
+			
+			if (rs.next()) {
+				rs = true;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return rs;
+	}
+
+	@Override
+	public List<DeptBean> selectDept() {
+		return null;
+	}
+
+	@Override
+	public List<EmpBean> selectEmps() {
+		return null;
+	}
+
+	@Override
+	public EmpBean selectEmp(EmpBean eb) {
+		return null;
+	}
+
+}

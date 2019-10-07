@@ -1,0 +1,20 @@
+package com.hanrabong.web.daos;
+
+import java.util.List;
+
+import com.hanrabong.web.domains.DeptBean;
+import com.hanrabong.web.domains.EmpBean;
+
+
+public interface EmpDao {
+
+	public EmpBean login(EmpBean eb);
+	public int insetEmp(EmpBean eb);
+
+	public List<DeptBean> selectDept();	
+	public List<EmpBean> findEmps();	
+	public EmpBean findEmp(EmpBean eb);	
+	
+	
+	
+}

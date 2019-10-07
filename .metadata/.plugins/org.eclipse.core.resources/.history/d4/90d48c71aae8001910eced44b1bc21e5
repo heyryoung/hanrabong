@@ -1,0 +1,19 @@
+package com.hanrabong.web.services;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+
+
+public interface EmpService {
+
+	
+	
+	public EmpBean login(HttpServletRequest request);
+
+	public List<String> findPositions();	
+//
+	public int join(HttpServletRequest request);
+	
+}

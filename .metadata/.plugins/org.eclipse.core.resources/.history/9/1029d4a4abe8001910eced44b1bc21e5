@@ -1,0 +1,39 @@
+package com.hanrabong.web.seviceImpls;
+
+import java.util.List;
+
+import com.hanrabong.web.domains.DeptBean;
+import com.hanrabong.web.domains.EmpBean;
+import com.hanrabong.web.services.EmpService;
+
+public class EmpServiceImpl implements EmpService{
+
+	@Override
+	public EmpBean login(EmpBean eb) {
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public int join(EmpBean eb) {
+		return 0;
+	}
+
+	@Override
+	public List<DeptBean> findDept() {
+		return null;
+	}
+
+	@Override
+	public List<EmpBean> findEmps() {
+		return null;
+	}
+
+	@Override
+	public EmpBean findEmp(EmpBean eb) {
+		return null;
+	}
+
+}

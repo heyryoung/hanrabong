@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.domains.EmpBean"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.domains.DeptBean"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.daos.EmpDao"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.services.EmpService"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.daoImpls.EmpDaoImpl"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.factory.DatabaseFactory"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.enums.DB"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.factory.Database"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.enums.DBDriver"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.enums.DBURL"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.command.Receiver"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.command.Sender"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.pool.Constants"/>
+<fullyQualifiedTypeName name="com.hanrabong.web.seviceImpls.EmpServiceImpl"/>
+</qualifiedTypeNameHistroy>

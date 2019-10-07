@@ -1,0 +1,18 @@
+package com.hanrabong.web.daos;
+
+import java.util.List;
+
+
+public interface EmpDao {
+
+	public PlayerBean login(PlayerBean param);
+	public List<String> selectPositions();
+	public List<PlayerBean> selectByTeamIdPositions(PlayerBean param);
+	public List<PlayerBean> selectByTeamIdHeightName(PlayerBean param);
+	public List<PlayerBean> ss(PlayerBean param);
+	
+	public int insertPlayer(PlayerBean param);
+	
+	
+	
+}

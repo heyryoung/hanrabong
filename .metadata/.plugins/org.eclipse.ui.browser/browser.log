@@ -1,0 +1,37 @@
+
+10월 07, 2019 13:02:43.51 NEW SESSION
+10월 07, 2019 13:02:43.51 [2336:5864:1007/130243.509:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 13:02:45.01 [2336:12140:1007/130245.014:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:03:14.27 [2336:12140:1007/130314.273:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:03:17.05 [2336:5864:1007/130317.052:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Connection failed (-106).
+10월 07, 2019 13:04:06.21 [2336:12140:1007/130406.215:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:05:52.31 [2336:12140:1007/130552.310:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:07:25.35 [2336:5864:1007/130725.358:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 07, 2019 13:07:51.58 [2336:5864:1007/130751.582:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 07, 2019 13:08:39.14 [9476:1752:1007/130839.144:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 13:08:39.43 [9476:8056:1007/130839.435:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:09:03.73 [9476:8056:1007/130903.730:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:09:11.64 [9476:1752:1007/130911.647:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Connection failed (-106).
+10월 07, 2019 13:09:31.99 [9476:1752:1007/130931.998:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 07, 2019 13:09:59.53 [9476:1752:1007/130959.534:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 07, 2019 13:10:02.29 [9476:8056:1007/131002.298:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 13:10:51.05 [9476:1752:1007/131051.050:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 07, 2019 13:11:37.24 [9476:8056:1007/131137.248:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:03:18.86 [7784:4816:1007/140318.864:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 14:03:27.18 [7784:2280:1007/140327.187:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:03:48.82 [7784:2280:1007/140348.824:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:03:51.65 [7784:4816:1007/140351.652:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Connection failed (-106).
+10월 07, 2019 14:04:40.81 [7784:2280:1007/140440.812:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:05:01.24 [7784:2280:1007/140501.245:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+10월 07, 2019 14:05:52.57 [8444:7460:1007/140552.578:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 14:06:19.10 [8444:1232:1007/140619.107:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:06:32.42 [9696:8328:1007/140632.425:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 14:06:35.84 [9696:13264:1007/140635.843:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 07, 2019 14:10:05.50 [4740:6696:1007/141005.501:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 14:10:21.59 [4740:8288:1007/141021.594:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -105
+10월 07, 2019 14:37:42.26 [11068:12344:1007/143742.268:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 14:57:08.05 [4072:8240:1007/145708.054:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 15:04:33.22 [10848:3924:1007/150433.223:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 15:27:41.38 [3456:8964:1007/152741.382:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Invalid credentials (credentials rejected by client).
+10월 07, 2019 15:45:46.79 [3456:8964:1007/154546.795:ERROR:CONSOLE(1)] "Refused to execute inline event handler because it violates the following Content Security Policy directive: "script-src 'strict-dynamic' 'sha256-1+GSDjMMklBjZY0QiWq+tGupCvajw4Xbn46ect2mZgM=' 'sha256-tCDoudW5/J/Alj3FMpQD7Hhf4u9RrSmCJLKqQnUos6g=' 'sha256-HqdPsO6hNmT/mfSeGdcX3eEGrZVva7AKD2Z2+1ujCZ8=' 'sha256-BcnvQDggot04zBRxv6gAGtlSZSQqR8mWXAE88yjPUkY=' 'sha256-IEF9PjeyU0vsr61C8cm3JQOerOYWdBsaGddCSPp6tZs=' 'sha256-RIDhH5uF+ciLoS6AP6ZkoxuwQyczkrTetThxXwVwFJI=' 'sha256-p07Ei562/+SaPLsvQViUdyTPe7g9IVno/tdWPTL3jA4='". Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution.
+10월 07, 2019 15:45:46.80 ", source: chrome-search://local-ntp/local-ntp.html (1)

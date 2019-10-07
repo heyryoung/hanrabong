@@ -1,0 +1,22 @@
+package com.hanrabong.web.services;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.hanrabong.web.domains.EmpBean;
+
+
+
+public interface EmpService {
+
+	
+	
+	public EmpBean login(HttpServletRequest request);
+	public int join(HttpServletRequest request);
+
+	public List<String> findDept();	
+
+
+	
+}

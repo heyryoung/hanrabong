@@ -1,0 +1,98 @@
+package com.hanrabong.web.daoImpls;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.hanrabong.web.daos.EmpDao;
+import com.hanrabong.web.domains.DeptBean;
+import com.hanrabong.web.domains.EmpBean;
+import com.hanrabong.web.factory.DatabaseFactory;
+import com.hanrabong.web.pool.Constants;
+
+public class EmpDaoImpl implements EmpDao{
+	
+	private static EmpDaoImpl instance = new EmpDaoImpl();
+	private  EmpDaoImpl() {}
+	public static EmpDaoImpl getInstance() {return instance;}
+	
+
+	@Override
+	public EmpBean login(EmpBean eb) {
+		
+		EmpBean result = new EmpBean();
+		
+		try {
+			String sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO ,(select Dname from dept where deptno  like e.deptno) dName  FROM EMP WHERE EMPNO LIKE '"+eb.getEmpNo()+"' AND ENAME LIKE '"+eb.getEName()+"' ";
+			
+			ResultSet rs =  DatabaseFactory
+					.createDatabase(Constants.VENDOR)
+					.getConnection()
+					.prepareStatement(sql)
+					.executeQuery();
+			
+			while (rs.next()) {
+				result.setEmpNo(rs.getString(1));
+				result.setEName(rs.getString(2));
+				result.setJob(rs.getString(3));
+				result.setMgr(rs.getString(4));
+				result.setHireDate(rs.getString(5));
+				result.setSal(rs.getString(6));
+				result.setComm(rs.getString(7));
+				result.setDeptNo(rs.getString(8));
+				result.setDName(dName);(rs.getString(9));
+				System.out.println(result.toString());
+			}
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	return result;
+		
+	}
+
+	@Override
+	public Boolean insetEmp(EmpBean eb) {
+		Boolean rs =false;
+		String sql = "INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)\r\n" + 
+				"VALUES(?,?,?,?,?,?,?,?)";
+		try {
+			PreparedStatement pstmt = DatabaseFactory
+					.createDatabase(Constants.VENDOR)
+					.getConnection()
+					.prepareStatement(sql);
+			pstmt.setString(1, eb.getEmpNo());
+			pstmt.setString(2, eb.getEName());
+			pstmt.setString(3, eb.getJob());
+			pstmt.setString(4, eb.getMgr());
+			pstmt.setString(5, eb.getHireDate());
+			pstmt.setString(6, eb.getSal());
+			pstmt.setString(7, eb.getComm());
+			pstmt.setString(8, eb.getDeptNo());
+			int rsCnt = pstmt.executeUpdate();
+			
+			if (rsCnt == 1) {
+				rs = true;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return rs;
+	}
+
+	@Override
+	public List<DeptBean> selectDept() {
+		return null;
+	}
+
+	@Override
+	public List<EmpBean> selectEmps() {
+		return null;
+	}
+
+	@Override
+	public EmpBean selectEmp(EmpBean eb) {
+		return null;
+	}
+
+}

@@ -1,0 +1,46 @@
+package com.hanrabong.web.daoImpls;
+
+import java.util.List;
+
+import com.hanrabong.web.daos.EmpDao;
+import com.hanrabong.web.domains.DeptBean;
+import com.hanrabong.web.domains.EmpBean;
+
+public class EmpDaoImpl implements EmpDao{
+	
+	private static EmpDaoImpl instance = new EmpDaoImpl();
+	private  EmpDaoImpl() {}
+	public static EmpDaoImpl getInstance() {return instance;}
+	
+
+	@Override
+	public EmpBean login(EmpBean eb) {
+		
+		
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public Boolean insetEmp(EmpBean eb) {
+		return ;
+	}
+
+	@Override
+	public List<DeptBean> selectDept() {
+		return null;
+	}
+
+	@Override
+	public List<EmpBean> selectEmps() {
+		return null;
+	}
+
+	@Override
+	public EmpBean selectEmp(EmpBean eb) {
+		return null;
+	}
+
+}
