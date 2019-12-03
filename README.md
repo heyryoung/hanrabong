@@ -1,7 +1,6 @@
 # hanrabong
 <h6>스펙</h6>
 <ul>
-<li>Spring version 4</li>
 <li>Oracle </li>
 <li>WebServlet</li>
 <li>jsp</li>
